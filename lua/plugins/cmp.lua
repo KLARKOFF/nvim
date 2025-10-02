@@ -3,6 +3,7 @@ return {
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
+      "saadparwaiz1/cmp_luasnip",
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
       "hrsh7th/cmp-cmdline",
@@ -57,7 +58,6 @@ return {
 
   {
     "L3MON4D3/LuaSnip",
-    "saadparwaiz1/cmp_luasnip",
     config = function()
       local luasnip = require("luasnip")
 
@@ -76,10 +76,9 @@ return {
         })
       })
 
-      luasnip.config.set_config {
+      luasnip.config.set_config({
         history = true,
-        updateevents = "TextChanged,TextChangedI",
-      }
+      })
     end
   },
 }
