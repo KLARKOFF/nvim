@@ -1,10 +1,13 @@
 local servers = {
   "lua_ls",
+  "bashls",
   "pyright",
   "clangd",
   "gopls",
   "texlab",
   "jdtls",
+  "html",
+  "cssls"
 }
 
 return {

@@ -76,6 +76,15 @@ return {
         })
       })
 
+      luasnip.add_snippets("tex", {
+        s("image", {
+          t("\\begin{figure}[h!]"),
+          t({"", "\\includegraphics[width=\\textwidth]{"}), i(0), t("}"),
+          t({"", "\\caption{}"}),
+          t({"", "\\end{figure}"}),
+        })
+      })
+
       luasnip.config.set_config({
         history = true,
       })
